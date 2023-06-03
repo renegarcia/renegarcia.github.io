@@ -1,0 +1,94 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: René I. García-Lara
+    - name: Languages
+      value: English, Spanish
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD
+      institution: University of Leeds, Leeds, UK
+      year: 2021
+      description:
+        - Topological Solitons.
+        - Vortex Dynamics.
+    - title: Master of Science
+      institution: Universidad Autónoma de Yucatán, Mérida, México.
+      year: 2010
+      description:
+        - Partial differential equations on curved spacetime.
+        - Quantum Field Theory.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Postdoctoral researcher
+      institution: Universidad Autónoma de Yucatán
+      year: 2021 - 2022
+      description:
+        - Differential Geometry.
+        - Complex Kleinian Groups.
+    - title: Technology Consultant
+      institution:
+      year: 2020
+      description:
+        - title: Software Development.
+          contents:
+            - python.
+            - R.
+        - Data Analysis.
+
+    - title: Mathematics Tutor
+      institution: University of Leeds, Leeds, UK.
+      year: 2017 - 2020
+      description:
+        - General mathematics.
+        - Calculus demonstrator.
+        - Programming demonstrator.
+
+    - title: Data Science assistant
+      institution: Naika
+      year: 2016 - 2017
+      description:
+
+    - title: Associated Lecturer "C".
+      institution: Universidad Autónoma de Yucatán, Mérida, México
+      year: 2010 - 2017
+
+    - title: Associated Lecturer "A".
+      institution: Universidad Autónoma de Yucatán, Mérida, México
+      year: 2004 - 2008
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/renegarcia/eleventa-db">eleventa-db</a>
+      year: 2023-now
+      description: Description of the Eleventa POS database.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2023
+      items:
+        - Accepted as candidate to the National Research System, México.
+
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Complex Kleinian Groups.
+      items:
+        - Topology of fundamental regions.
+        - Classification of groups.
+    - title: Soliton vortex dynamics.
+      items:
+        - Moduli space.
+        - Numerical simulations.
+
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Running, programming.
