@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: prof_pic.png
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>Mérida</p>
@@ -21,4 +21,3 @@ social: true  # includes social icons at the bottom of the page
 
 * [Gists.](https://gist.github.com/renegarcia)
 * [Notes.](https://renegarcia.github.io/dendron)
-
