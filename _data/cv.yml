@@ -26,6 +26,12 @@
   type: time_table
   contents:
     - title: Postdoctoral researcher
+      institution: Universidad Nacional Autónoma de México
+      year: 2023 - 2024
+      description:
+        - Differential Geometry.
+        - Complex Kleinian Groups.
+    - title: Postdoctoral researcher
       institution: Universidad Autónoma de Yucatán
       year: 2021 - 2022
       description:
