@@ -17,10 +17,10 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Welcome to my homepage, I am  a postdoctoral research at National Autonomous University of Mexico, where I work on _differential geometry_ and _mathematical physics_ applied to a variety of problems. Details can be found on my [publications page](/publications). I keep notes of the topics I find interesting, these are freely available at the following links:
+I am  a postdoctoral research at National Autonomous University of Mexico, where I work on _differential geometry_ and _mathematical physics_ applied to a variety of problems. Details can be found on my [publications page](/publications). I keep notes of the topics I find interesting, these are freely available at the following links:
 
+* [Notes.](https://renegarcia.github.io/dendron){:target="_blank"}
 * [Gists.](https://gist.github.com/renegarcia)
-* [Notes.](https://renegarcia.github.io/dendron)
 
 I am also an enthusiast of computer science and entrepenurship, specially regarding the art of solving data related problems for the industry, links to some of my projects can be found [here](/projects).
 
