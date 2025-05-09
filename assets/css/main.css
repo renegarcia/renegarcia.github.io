@@ -94,7 +94,7 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .profile img {
@@ -123,6 +123,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-size: 1.2rem;
 }
 
 hr {

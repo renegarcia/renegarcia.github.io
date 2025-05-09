@@ -16,6 +16,44 @@
 ">
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website">
 
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="René I. García-Lara">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="René I. García-Lara | submenus">
+    <meta property="og:url" content="https://renegarcia.github.io/_pages/dropdown/">
+    <meta property="og:description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+    
+    <meta property="og:locale" content="en">
+
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="submenus">
+    <meta name="twitter:description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+    
+    <meta name="twitter:site" content="@renegarxia">
+    <meta name="twitter:creator" content="@renegarxia">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+      {
+        "author":
+        {
+          "@type": "Person",
+          "name": "René I. García-Lara"
+        },
+        "url": "https://renegarcia.github.io/_pages/dropdown/",
+        "@type": "WebSite",
+        "description": "A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+",
+        "headline": "submenus",
+        "sameAs": ["https://orcid.org/0000-0003-0153-4568", "https://github.com/renegarcia", "https://www.linkedin.com/in/ixxra", "https://twitter.com/renegarxia"],
+        "name": "René I. García-Lara",
+        "@context": "https://schema.org"
+      }
+    </script>
+
 
     <!-- Bootstrap & MDB -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
@@ -47,13 +85,13 @@
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class=" sticky-bottom-footer">
 
     <!-- Header -->
     <header>
 
       <!-- Nav Bar -->
-      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm sticky-top">
         <div class="container">
           <a class="navbar-brand title font-weight-lighter" href="/"><span class="font-weight-bold">René </span>I. García-Lara</a>
           <!-- Navbar Toggle -->
@@ -114,12 +152,6 @@
         </div>
       </nav>
 
-      <!-- Scrolling Progress Bar -->
-      <progress id="progress" value="0">
-        <div class="progress-container">
-          <span class="progress-bar"></span>
-        </div>
-      </progress>
     </header>
 
 
@@ -142,9 +174,8 @@
 
     </div>
 
-    <!-- Footer -->    
-    <footer class="fixed-bottom">
-      <div class="container mt-0">
+    <!-- Footer -->    <footer class="sticky-bottom mt-5">
+      <div class="container">
         © Copyright 2025 René I. García-Lara. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
 
       </div>
@@ -193,83 +224,6 @@
     gtag('config', 'G-5138HY20YN');
   </script>
     
-
-<!-- Scrolling Progress Bar -->
-<script type="text/javascript">
-  /*
-   * This JavaScript code has been adapted from the article 
-   * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar, 
-   * published on the website https://css-tricks.com on the 7th of May, 2014.
-   * Couple of changes were made to the original code to make it compatible 
-   * with the `al-foio` theme.
-   */
-  const progressBar = $("#progress");
-  /*
-   * We set up the bar after all elements are done loading.
-   * In some cases, if the images in the page are larger than the intended
-   * size they'll have on the page, they'll be resized via CSS to accomodate
-   * the desired size. This mistake, however, breaks the computations as the
-   * scroll size is computed as soon as the elements finish loading.
-   * To account for this, a minimal delay was introduced before computing the
-   * values.
-   */
-  window.onload = function () {
-    setTimeout(progressBarSetup, 50);
-  };
-  /*
-   * We set up the bar according to the browser.
-   * If the browser supports the progress element we use that.
-   * Otherwise, we resize the bar thru CSS styling
-   */
-  function progressBarSetup() {
-    if ("max" in document.createElement("progress")) {
-      initializeProgressElement();
-      $(document).on("scroll", function() {
-        progressBar.attr({ value: getCurrentScrollPosition() });
-      });
-      $(window).on("resize", initializeProgressElement);
-    } else {
-      resizeProgressBar();
-      $(document).on("scroll", resizeProgressBar);
-      $(window).on("resize", resizeProgressBar);
-    }
-  }
-  /*
-   * The vertical scroll position is the same as the number of pixels that
-   * are hidden from view above the scrollable area. Thus, a value > 0 is
-   * how much the user has scrolled from the top
-   */
-  function getCurrentScrollPosition() {
-    return $(window).scrollTop();
-  }
-
-  function initializeProgressElement() {
-    let navbarHeight = $("#navbar").outerHeight(true);
-    $("body").css({ "padding-top": navbarHeight });
-    $("progress-container").css({ "padding-top": navbarHeight });
-    progressBar.css({ top: navbarHeight });
-    progressBar.attr({
-      max: getDistanceToScroll(),
-      value: getCurrentScrollPosition(),
-    });
-  }
-  /*
-   * The offset between the html document height and the browser viewport
-   * height will be greater than zero if vertical scroll is possible.
-   * This is the distance the user can scroll
-   */
-  function getDistanceToScroll() {
-    return $(document).height() - $(window).height();
-  }
-
-  function resizeProgressBar() {
-    progressBar.css({ width: getWidthPercentage() + "%" });
-  }
-  // The scroll ratio equals the percentage to resize the bar
-  function getWidthPercentage() {
-    return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
-  }
-</script>
 
   </body>
 </html>
