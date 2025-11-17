@@ -3,7 +3,7 @@ layout: post
 title: Seminar-Type Workshop on Topological Solitons
 date: 2023-08-29 15:09:00
 description: An international event about topological solitons
-featured: false
+featured: true
 ---
 
 

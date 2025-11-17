@@ -3,7 +3,7 @@ layout: post
 title: XIX UADY's Geometry Coloquium
 date: 2024-11-11 15:09:00
 description: Information about the 19th geometry coloquium at UADY.
-featured: false
+featured: true
 ---
 
 The 19th edition of the Geometry Colloquium at the Autonomous University of Yucatán, México, includes specialists from the Institute of Mathematics and the Faculty of Sciences of UNAM, CIMAT, and the Autonomous Metropolitan University (Iztapalapa Unit) among its invited speakers. The Colloquium activities include a mini-course, panoramic lectures (focused on a broad audience), conferences, and research reports.
