@@ -3,6 +3,15 @@
  * To adjust anything, simply edit the variables below and rebuild the theme.
  ******************************************************************************/
 
+// Fonts
+$base-font-size:   16px !default;
+$base-font-weight: 320 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+$base-font-family: 'Roboto Slab', serif;
+//$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
+
+
 
 // Colors
 $red-color:           #FF3636 !default;

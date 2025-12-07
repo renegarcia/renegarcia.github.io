@@ -4,6 +4,10 @@
 
 // Typography
 
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+}
+
 p,
 h1,
 h2,
@@ -598,7 +602,7 @@ footer.sticky-bottom {
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: normal;
       }
 
       .author {
